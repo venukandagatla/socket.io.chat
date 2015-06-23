@@ -1,0 +1,19 @@
+{
+  "name": "socket-io-chat",
+  "version": "0.0.0",
+  "description": "Chatting application with socket.io",
+  "main": "application.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "local"
+  },
+  "keywords": [
+    "socket.io",
+    "chat"
+  ],
+  "author": "venu Kandagatla",
+  "license": "MIT"
+}
