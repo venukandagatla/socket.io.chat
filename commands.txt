@@ -1,2 +1,5 @@
 #Initialise project
 npm install
+
+#add express
+npm install --save express
