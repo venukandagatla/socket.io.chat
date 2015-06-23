@@ -5,10 +5,18 @@ var io = require('socket.io')(http);
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
+app.get('/jquery.js', function(req, res){
+  res.sendFile(__dirname + '/jquery.js');
+});
 
 //step 5 add disconnect event
 io.on('connection', function(socket){
   console.log('a user connected');
+  
+  socket.on('chat message', function(msg){
+    console.log('message: ' + msg);
+  });
+  
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
