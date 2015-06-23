@@ -20,6 +20,8 @@ io.on('connection', function(socket){
   
   socket.on('disconnect', function(){
     console.log('user disconnected');
+    //broadcast message to all user when some disconnected
+    io.emit('this','unknown user disconnected');
   });
 });
 
