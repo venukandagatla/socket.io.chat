@@ -16,3 +16,7 @@ node application.js
 # Step 3
 
 # add HTML File
+
+#Step 4
+# add support for socket.io
+npm install --save socket.io
